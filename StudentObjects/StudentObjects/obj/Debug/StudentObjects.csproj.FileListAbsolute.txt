@@ -1,0 +1,8 @@
+C:\XStudentRecords\StudentObjects\StudentObjects\bin\Debug\StudentObjects.exe.config
+C:\XStudentRecords\StudentObjects\StudentObjects\bin\Debug\StudentObjects.exe
+C:\XStudentRecords\StudentObjects\StudentObjects\bin\Debug\StudentObjects.pdb
+C:\XStudentRecords\StudentObjects\StudentObjects\obj\Debug\StudentObjects.csprojResolveAssemblyReference.cache
+C:\XStudentRecords\StudentObjects\StudentObjects\obj\Debug\StudentObjects.csproj.CoreCompileInputs.cache
+C:\XStudentRecords\StudentObjects\StudentObjects\obj\Debug\StudentObjects.exe
+C:\XStudentRecords\StudentObjects\StudentObjects\obj\Debug\StudentObjects.pdb
+C:\XStudentRecords\StudentObjects\StudentObjects\bin\Debug\StudentRecords.txt

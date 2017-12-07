@@ -1,5 +1,5 @@
 ﻿373,Hugo,Robinson,08/10/2000,U
-668,Nyle,Neckle,03/12/2000,A*
+668,Nyle,Neckle,03/12/2000,A
 899,Larry,Zhao,06/12/2000,A
-N85,Jess,Potts,05/05/2000,A
+685,Jess,Potts,05/05/2000,A
 700,Harry,Arkwright,16/01/2001,A

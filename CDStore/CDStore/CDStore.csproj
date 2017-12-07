@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{35D734BD-26ED-45B6-A42E-D6C8DA146244}</ProjectGuid>
+    <ProjectGuid>{0AF0AA6A-6A86-4E19-A2B2-689E6581C45E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>StudentObjects</RootNamespace>
-    <AssemblyName>StudentObjects</AssemblyName>
+    <RootNamespace>CDStore</RootNamespace>
+    <AssemblyName>CDStore</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,16 +44,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="StudentMedical.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="StudentRecords.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

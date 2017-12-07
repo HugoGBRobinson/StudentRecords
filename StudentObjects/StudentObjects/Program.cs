@@ -10,8 +10,6 @@ namespace StudentObjects
         static void Main(string[] args)
         {
             ReadToStudentList();
-            
-            
         }
 
         private static void ReadToStudentList()
@@ -25,19 +23,40 @@ namespace StudentObjects
             catch (FileNotFoundException)
             {
                 Console.WriteLine("File does not exist");
+                Console.ReadKey();
             }
-
-
 
         }
         static void ReadFileIntoElementsArray(string fileName)
         {
+
             using (StreamReader reader = new StreamReader(fileName))
             {
-                var ElementsArray = reader.ToString().Split(',');
+                int i = 0;
+                while (!reader.EndOfStream)
+                {
+                    var record = reader.ReadLine();
+                    var elements = record.Split(',');
 
+                    var number = Convert.ToInt32(elements[0]);
+                    var first = Convert.ToString(elements[1]);
+                    var last = Convert.ToString(elements[2]);
+                    var dob = Convert.ToDateTime(elements[3]);
+                    var grade = Convert.ToChar(elements[4]);
+                    
+                    
+                    Student s = new Student(number, first, last, dob, grade);
+
+                    foreach (var item in elements)
+                    {
+                        records.Add(s);
+                    }
+                    
+                    i++;
+                }
 
             }
+
         }
 
         private static void PrintStudent(Student s1)

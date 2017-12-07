@@ -12,6 +12,6 @@ namespace StudentObjects
 
         public double Weight { get; set; }
 
-        public int MyProperty { get; set; }
+        public bool OnGames { get; set; }
     }
 }
