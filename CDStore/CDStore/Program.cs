@@ -44,6 +44,11 @@ namespace CDStore
             foreach (Artist a in context.Artists)
             {
                 Console.WriteLine(a.Name + " " + a.ArtistId);
+                foreach (Song s in a.Songs)
+                {
+                    Console.WriteLine(s.Title + "\t" + s.MusicType);
+                }
+
             }
             Console.WriteLine();
         }
@@ -57,5 +62,6 @@ namespace CDStore
             context.Artists.Add(a);
             context.SaveChanges();
         }
+
     }
 }
