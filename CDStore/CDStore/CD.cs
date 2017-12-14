@@ -10,7 +10,7 @@ namespace CDStore
     {
         public virtual int CDID { get; set; }
         public virtual string Title{ get; set; }
-        public virtual string RecordCompany { get; set; }
+        public virtual RecordCompany RecordCompany { get; set; }
         public virtual DateTime Published { get; set; }
         public virtual List <Song> Songs { get; set; }
         public CD()

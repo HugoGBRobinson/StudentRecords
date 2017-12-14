@@ -30,6 +30,9 @@ namespace CDStore
                     case '5':
                         AddSongToArtist(context);
                         break;
+                    case '6':
+                        ListCdsByTitle(context);
+                        break;
                     case '9':
                         keepGoing = false;
                         break;
@@ -93,6 +96,24 @@ namespace CDStore
             var Song = new Song() { Title = NewName, Artist = artist };
             context.Songs.Add(Song);
             context.SaveChanges();
+
+        }
+        private static void ListCdsByTitle(CDStoreDbContext context)
+        {
+            Console.WriteLine("Enter the match string");
+            var Count = 0;
+            foreach(CD a in context.CDs)
+            {
+                 var CDNameList = a.Title.Split();
+                for (int i = 0; i < CDNameList.Length; i++)
+                {
+
+                }
+            }
+            
+
+
+
 
         }
     }
